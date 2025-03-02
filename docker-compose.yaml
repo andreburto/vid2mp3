@@ -1,0 +1,11 @@
+services:
+  vid2mp3:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    entrypoint: /app/vid2mp3.sh
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    working_dir: /app
