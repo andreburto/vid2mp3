@@ -3,7 +3,6 @@
 cd $(dirname $0)
 
 VIDEO_URL=$1
-VIDEO_ID=$(echo $VIDEO_URL | sed -e 's/.*v=\(.*\)/\1/')
 
 mkdir -p downloads
 
