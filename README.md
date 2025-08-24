@@ -19,4 +19,7 @@
 
 ## Update Log
 
-* **2025-03-02:** Created the initial script to download YT videos to MP3s.
+**2025-08-23:** Update Dockerfile to pull down latest `master` branch.
+Per: https://github.com/yt-dlp/yt-dlp/issues/13930.
+
+**2025-03-02:** Created the initial script to download YT videos to MP3s.

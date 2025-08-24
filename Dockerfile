@@ -11,6 +11,8 @@ RUN apt-get update && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python3 get-pip.py && \
     python3 -m pip install --upgrade pip && \
+    python3 -m pip install -U pip hatchling wheel && \
+    python3 -m pip install --force-reinstall "yt-dlp[default] @ https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz" && \
     python3 -m pip install -U "yt-dlp[default]" && \
     chmod a+x vid2mp3.sh
 
